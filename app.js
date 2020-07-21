@@ -45,6 +45,7 @@ app.use(bodyparser())
   }))
   .use(routes.index)
   .use(routes.user)
+  .use(routes.nadd)
   .use(router.allowedMethods())
 
 // logger

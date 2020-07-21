@@ -1,6 +1,7 @@
 const Router = require('koa-router')
 const router = new Router()
 const user = require('./user')
+const nadd = require('./user/nadd')
 
 router.get('/', async (ctx, next) => {
   // ctx.body = 'Hello World'
@@ -12,5 +13,6 @@ router.get('/', async (ctx, next) => {
 
 module.exports = {
   index: router.routes(),
-  user
+  user,
+  nadd
 }
